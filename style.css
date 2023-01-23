@@ -73,10 +73,7 @@ a {
     align-items: center;
     justify-content: center;
     height: 400px;
-    gap: 20px;
-}
-
-.bodyLeft {
+    gap: 25px;
 }
 
 .bodyRight {
@@ -101,3 +98,32 @@ a {
     height: 350px;
     width: auto;
 }
+
+.projectSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.photos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.projectPhoto {
+    height: 300px;
+    width: auto;
+    transition: 1s ease;
+}
+    
+.projectPhoto:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.8s ease;
+    cursor: pointer;
+    }
